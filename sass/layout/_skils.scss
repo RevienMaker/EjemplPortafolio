@@ -1,0 +1,68 @@
+.skils-section{
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    text-align: start;
+    margin-top: 3rem;
+    @include tablet{
+        text-align: center;
+    }
+
+
+    .skils-titulo{
+
+        @include tablet{
+            margin-top: 5rem
+        };
+
+        font-weight: 500;
+        size: 6rem;
+
+        h2{
+            font-size: 4rem;
+            margin: 0;
+        }
+        p{
+            font-size: 2.3rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .habilidades{
+
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .skil{
+            margin-left: 2rem;
+            text-align: start;
+            
+            @include tablet{
+                text-align: center;
+            }
+
+            h4{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            p{
+                padding: 0 1rem;
+                width: 70%;
+                font-size: 1.8rem;
+                @include tablet{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

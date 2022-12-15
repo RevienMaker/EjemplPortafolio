@@ -1,0 +1,31 @@
+.mas-informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 8rem 0;
+    padding: 8rem 0;
+    h3{
+        font-size: 3rem;
+        margin: 0;
+        line-height: 5rem;
+        @include tablet{
+            font-size: 5rem;
+            line-height: 7rem;
+        }
+    }
+    .morado{
+        color: $morado;
+    }
+
+    .iconos-informacion{
+        @include grid(3, 3rem, center);
+        margin-top: 10rem;
+
+        .icono{
+            svg{
+                width: 4.5rem;
+            }
+        }
+    }
+}

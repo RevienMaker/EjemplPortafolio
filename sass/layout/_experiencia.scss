@@ -1,0 +1,106 @@
+.experiencia-seccion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: white;
+    padding-bottom: 8rem;
+
+    .experiencia-titulo{
+
+        font-weight: 500;
+        size: 6rem;
+        margin-bottom: 3rem;
+        margin-top: 8rem;
+
+        h2{
+            font-size: 4rem;
+            margin: 0;
+        }
+        p{
+            font-weight: 500;
+            font-size: 2.4rem;
+            @include tablet{
+                padding: 0 10rem;
+            }
+            padding: 0;
+            margin: 0 4rem;
+            margin-bottom: 5rem;
+            line-height: 3.2rem;
+        }
+        .boton{
+            color: white;
+            background-color: $azluClaro;
+            padding: 1.4rem 2rem;
+            font-size: 1.8rem;
+            border-radius: 4rem;
+            font-weight: 500;
+        }
+    }
+
+    .proyectos{
+
+        display: none;
+
+        margin-top: 6rem;
+
+        @include tablet{
+            @include grid(3, 3rem, auto);
+        }
+
+        .proyecto{
+
+            .texto-proyecto{
+                
+                h4{
+                    margin: 1rem 0;
+                }
+
+                p{
+                    margin: 0;
+                    font-size: 1.7rem;
+                    margin-bottom: 4rem;
+                }
+
+                text-align: start;
+            }
+
+            .imagen-proyecto{
+                img{
+                    width: 100%;
+                    height: 24rem;
+                    border-radius: 1rem;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .proyectos-mobile{
+        @include tablet{
+            display: none;
+        }
+        .texto-proyecto{
+                
+            h4{
+                margin: 1rem 0;
+            }
+
+            p{
+                margin: 0;
+                font-size: 1.7rem;
+                margin-bottom: 4rem;
+            }
+
+            text-align: start;
+        }
+
+        .imagen-proyecto{
+            img{
+                width: 100%;
+                height: 24rem;
+                border-radius: 1rem;
+                object-fit: cover;
+            }
+        }
+    }
+}

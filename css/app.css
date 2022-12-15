@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+/* --- Colores --- */
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: #F1F1F1;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #1E0E62;
+}
+
+p {
+  font-size: 2.2rem;
+  color: rgba(21, 20, 57, 0.4);
+  line-height: 3rem;
+  padding: 0;
+}
+
+.contenedor {
+  width: 80%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+/* UI */
+.intro {
+  margin-top: 8rem;
+}
+@media (min-width: 768px) {
+  .intro {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .intro {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.intro .texto h2 {
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+@media (min-width: 768px) {
+  .intro .texto h2 {
+    font-size: 5rem;
+  }
+}
+.intro .texto p {
+  font-weight: 500;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .intro .texto {
+    width: 100%;
+    padding-right: 0;
+  }
+  .intro .texto h2 {
+    font-size: 4rem;
+  }
+  .intro .texto p {
+    width: 76%;
+    font-size: 2.2rem;
+  }
+}
+
+.imagen {
+  display: flex;
+  justify-content: start;
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .imagen {
+    justify-content: center;
+  }
+}
+.imagen img {
+  width: 100%;
+  max-height: 44rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.linea-gris {
+  border-bottom: 1px solid #e3e3f3;
+}
+@media (min-width: 768px) {
+  .linea-gris {
+    border-bottom: none;
+  }
+}
+
+.header {
+  background-color: #fff;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.navegacion h1 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+.navegacion a {
+  font-weight: 500;
+  padding: 0.5rem 3rem;
+  border: 2px solid #EBEAED;
+  border-radius: 10rem;
+}
+
+.skils-section {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  text-align: start;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .skils-section {
+    text-align: center;
+  }
+}
+.skils-section .skils-titulo {
+  font-weight: 500;
+  size: 6rem;
+}
+@media (min-width: 768px) {
+  .skils-section .skils-titulo {
+    margin-top: 5rem;
+  }
+}
+.skils-section .skils-titulo h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.skils-section .skils-titulo p {
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 0;
+}
+.skils-section .habilidades {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .skils-section .habilidades {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.skils-section .habilidades .skil {
+  margin-left: 2rem;
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .skils-section .habilidades .skil {
+    text-align: center;
+  }
+}
+.skils-section .habilidades .skil h4 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.skils-section .habilidades .skil p {
+  padding: 0 1rem;
+  width: 70%;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .skils-section .habilidades .skil p {
+    width: 100%;
+  }
+}
+
+.experiencia-seccion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+  background-color: white;
+  padding-bottom: 8rem;
+}
+.experiencia-seccion .experiencia-titulo {
+  font-weight: 500;
+  size: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+}
+.experiencia-seccion .experiencia-titulo h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.experiencia-seccion .experiencia-titulo p {
+  font-weight: 500;
+  font-size: 2.4rem;
+  padding: 0;
+  margin: 0 4rem;
+  margin-bottom: 5rem;
+  line-height: 3.2rem;
+}
+@media (min-width: 768px) {
+  .experiencia-seccion .experiencia-titulo p {
+    padding: 0 10rem;
+  }
+}
+.experiencia-seccion .experiencia-titulo .boton {
+  color: white;
+  background-color: #25DAC5;
+  padding: 1.4rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 4rem;
+  font-weight: 500;
+}
+.experiencia-seccion .proyectos {
+  display: none;
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .experiencia-seccion .proyectos {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: auto;
+  }
+}
+.experiencia-seccion .proyectos .proyecto .texto-proyecto {
+  text-align: start;
+}
+.experiencia-seccion .proyectos .proyecto .texto-proyecto h4 {
+  margin: 1rem 0;
+}
+.experiencia-seccion .proyectos .proyecto .texto-proyecto p {
+  margin: 0;
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+}
+.experiencia-seccion .proyectos .proyecto .imagen-proyecto img {
+  width: 100%;
+  height: 24rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .experiencia-seccion .proyectos-mobile {
+    display: none;
+  }
+}
+.experiencia-seccion .proyectos-mobile .texto-proyecto {
+  text-align: start;
+}
+.experiencia-seccion .proyectos-mobile .texto-proyecto h4 {
+  margin: 1rem 0;
+}
+.experiencia-seccion .proyectos-mobile .texto-proyecto p {
+  margin: 0;
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+}
+.experiencia-seccion .proyectos-mobile .imagen-proyecto img {
+  width: 100%;
+  height: 24rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.mas-informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 8rem 0;
+  padding: 8rem 0;
+}
+.mas-informacion h3 {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 5rem;
+}
+@media (min-width: 768px) {
+  .mas-informacion h3 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+}
+.mas-informacion .morado {
+  color: #482BE7;
+}
+.mas-informacion .iconos-informacion {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin-top: 10rem;
+}
+.mas-informacion .iconos-informacion .icono svg {
+  width: 4.5rem;
+}
+
+/*# sourceMappingURL=app.css.map */
